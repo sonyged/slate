@@ -43,6 +43,13 @@ export const IS_FIREFOX_LEGACY =
 export const IS_QQBROWSER =
   typeof navigator !== 'undefined' && /.*QQBrowser/.test(navigator.userAgent)
 
+// dpj ios app
+export const IS_HYPERCLASS_IOS =
+  typeof navigator !== 'undefined' && /HyperClass-ios/.test(navigator.userAgent)
+// dpj android app
+export const IS_HYPERCLASS_ANDROID =
+  typeof navigator !== 'undefined' && /HyperClass-android/.test(navigator.userAgent)
+
 // Check if DOM is available as React does internally.
 // https://github.com/facebook/react/blob/master/packages/shared/ExecutionEnvironment.js
 export const CAN_USE_DOM = !!(
