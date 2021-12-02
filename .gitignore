@@ -15,6 +15,9 @@ cypress/fixtures
 cypress/plugins
 .DS_Store
 
+!packages/slate-react/dist
+!packages/slate-react/lib
+
 # Recommendation from https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored (not using Zero-installs)
 .yarn/*
 !.yarn/releases
