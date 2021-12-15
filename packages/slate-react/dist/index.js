@@ -408,7 +408,7 @@ var DefaultLeaf = function DefaultLeaf(props) {
 
 var IS_IOS = typeof navigator !== 'undefined' && typeof window !== 'undefined' && /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 var IS_APPLE = typeof navigator !== 'undefined' && /Mac OS X/.test(navigator.userAgent);
-var IS_ANDROID = typeof navigator !== 'undefined' && /Android/.test(navigator.userAgent);
+typeof navigator !== 'undefined' && /Android/.test(navigator.userAgent);
 var IS_FIREFOX = typeof navigator !== 'undefined' && /^(?!.*Seamonkey)(?=.*Firefox).*/i.test(navigator.userAgent);
 var IS_SAFARI = typeof navigator !== 'undefined' && /Version\/[\d\.]+.*Safari/.test(navigator.userAgent); // "modern" Edge was released at 79.x
 
@@ -4417,7 +4417,8 @@ var withReact = function withReact(editor) {
 };
 
 // Components
-var Editable = IS_ANDROID ? AndroidEditable : Editable$1;
+
+var Editable = Editable$1;
 
 exports.AndroidEditable = AndroidEditable;
 exports.DefaultEditable = Editable$1;
