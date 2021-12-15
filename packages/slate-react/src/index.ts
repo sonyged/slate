@@ -4,7 +4,8 @@ import { Editable as DefaultEditable } from './components/editable'
 import { AndroidEditable } from './components/android/android-editable'
 import { IS_ANDROID } from './utils/environment'
 
-export const Editable = IS_ANDROID ? AndroidEditable : DefaultEditable
+// export const Editable = IS_ANDROID ? AndroidEditable : DefaultEditable
+export const Editable = false ? AndroidEditable : DefaultEditable
 export {
   Editable as DefaultEditable,
   RenderElementProps,
